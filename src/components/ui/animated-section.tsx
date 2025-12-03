@@ -18,10 +18,12 @@ export function AnimatedSection({
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
+        // Set visibility based on whether the element is intersecting
         setIsVisible(entry.isIntersecting);
       },
       {
-        rootMargin: '0px 0px -100px 0px', // Trigger when 100px of the element is visible
+        rootMargin: '0px 0px -100px 0px', // Adjust root margin as needed
+        threshold: 0, // Trigger as soon as the element enters the viewport
       }
     );
 

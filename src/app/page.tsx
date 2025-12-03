@@ -9,6 +9,7 @@ import {
 import { Github, Linkedin, Mail, Briefcase, GraduationCap, Code, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Typewriter } from '@/components/ui/typewriter';
 
 export default function Home() {
   const skills = [
@@ -29,41 +30,46 @@ export default function Home() {
       <main className="flex-1">
         <section id="hero" className="w-full py-20 md:py-32 lg:py-40 bg-secondary/50">
           <div className="container mx-auto px-4 md:px-6">
-            <AnimatedSection>
               <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
                 <div className="flex justify-center md:order-last">
-                  <Image
-                    src="https://picsum.photos/seed/aqil/600/600"
-                    width="300"
-                    height="300"
-                    alt="Aqil Aswangga Anggaraksa"
-                    className="aspect-square overflow-hidden rounded-full object-cover"
-                    data-ai-hint="profile picture"
-                  />
+                  <AnimatedSection>
+                    <Image
+                      src="https://picsum.photos/seed/aqil/600/600"
+                      width="300"
+                      height="300"
+                      alt="Aqil Aswangga Anggaraksa"
+                      className="aspect-square overflow-hidden rounded-full object-cover"
+                      data-ai-hint="profile picture"
+                    />
+                  </AnimatedSection>
                 </div>
                 <div className="flex flex-col justify-center space-y-4 text-center md:text-left">
                   <div className="space-y-2">
-                    <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                      Aqil Aswangga Anggaraksa
-                    </h1>
-                    <h2 className="text-2xl font-medium text-primary/80">
-                      Software Developer
-                    </h2>
-                    <p className="max-w-[600px] mx-auto md:mx-0 text-muted-foreground md:text-xl">
-                      Active in the field of Computer Science, deepening my expertise in Software Development using Flutter and Dart, as well as Web Development with HTML5, PHP, and JavaScript.
-                    </p>
+                    <Typewriter
+                      text="Aqil Aswangga Anggaraksa"
+                      className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl"
+                    />
+                    <AnimatedSection>
+                      <h2 className="text-2xl font-medium text-primary/80">
+                        Software Developer
+                      </h2>
+                      <p className="max-w-[600px] mx-auto md:mx-0 text-muted-foreground md:text-xl">
+                        Active in the field of Computer Science, deepening my expertise in Software Development using Flutter and Dart, as well as Web Development with HTML5, PHP, and JavaScript.
+                      </p>
+                    </AnimatedSection>
                   </div>
-                  <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center md:justify-start">
-                    <Button asChild size="lg">
-                      <Link href="#contact">Contact Me</Link>
-                    </Button>
-                    <Button asChild variant="outline" size="lg">
-                      <Link href="#experience">View My Work</Link>
-                    </Button>
-                  </div>
+                  <AnimatedSection>
+                    <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center md:justify-start">
+                      <Button asChild size="lg">
+                        <Link href="#contact">Contact Me</Link>
+                      </Button>
+                      <Button asChild variant="outline" size="lg">
+                        <Link href="#experience">View My Work</Link>
+                      </Button>
+                    </div>
+                  </AnimatedSection>
                 </div>
               </div>
-            </AnimatedSection>
           </div>
         </section>
 
