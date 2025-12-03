@@ -10,6 +10,10 @@ import { Github, Linkedin, Mail, Briefcase, GraduationCap, Code, Instagram } fro
 import Link from 'next/link';
 import { AnimatedSection } from '@/components/ui/animated-section';
 import { Typewriter } from '@/components/ui/typewriter';
+// import profilepict1 from './profilepict1.jpeg';
+// import profilepict1 from '@/app/profilepict1.jpeg';
+// import profilepict1 from '@/app/pp1.jpeg';
+import profilepict1 from '@/app/pp3.jpeg';
 
 // Import logos
 import { PythonLogo } from '@/components/icons/PythonLogo';
@@ -53,7 +57,7 @@ export default function Home() {
                 <div className="flex justify-center md:order-last">
                   <AnimatedSection>
                     <Image
-                      src="https://picsum.photos/seed/profile/300/300"
+                      src={profilepict1}
                       width="300"
                       height="300"
                       alt="Aqil Aswangga"
