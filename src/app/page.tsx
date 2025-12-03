@@ -11,18 +11,37 @@ import Link from 'next/link';
 import { AnimatedSection } from '@/components/ui/animated-section';
 import { Typewriter } from '@/components/ui/typewriter';
 
+// Import logos
+import { PythonLogo } from '@/components/icons/PythonLogo';
+import { HtmlLogo } from '@/components/icons/HtmlLogo';
+import { CssLogo } from '@/components/icons/CssLogo';
+import { PhpLogo } from '@/components/icons/PhpLogo';
+import { SqlDatabaseLogo } from '@/components/icons/SqlDatabaseLogo';
+import { FlutterLogo } from '@/components/icons/FlutterLogo';
+import { DartLogo } from '@/components/icons/DartLogo';
+import { KotlinLogo } from '@/components/icons/KotlinLogo';
+import { ValaLogo } from '@/components/icons/ValaLogo';
+import { MongoDbLogo } from '@/components/icons/MongoDbLogo';
+import { JavascriptLogo } from '@/components/icons/JavascriptLogo';
+import { PyMongoLogo } from '@/components/icons/PyMongoLogo';
+import { FlaskLogo } from '@/components/icons/FlaskLogo';
+
+
 export default function Home() {
   const skills = [
-    'Python',
-    'HTML, CSS, PHP',
-    'SQL Database',
-    'Flutter & Dart',
-    'Kotlin',
-    'Vala',
-    'MongoDB',
-    'JavaScript',
-    'PyMongo',
-    'Flask'
+    { name: 'Python', icon: <PythonLogo className="h-6 w-6" /> },
+    { name: 'HTML', icon: <HtmlLogo className="h-6 w-6" /> },
+    { name: 'CSS', icon: <CssLogo className="h-6 w-6" /> },
+    { name: 'PHP', icon: <PhpLogo className="h-6 w-6" /> },
+    { name: 'SQL Database', icon: <SqlDatabaseLogo className="h-6 w-6" /> },
+    { name: 'Flutter', icon: <FlutterLogo className="h-6 w-6" /> },
+    { name: 'Dart', icon: <DartLogo className="h-6 w-6" /> },
+    { name: 'Kotlin', icon: <KotlinLogo className="h-6 w-6" /> },
+    { name: 'Vala', icon: <ValaLogo className="h-6 w-6" /> },
+    { name: 'MongoDB', icon: <MongoDbLogo className="h-6 w-6" /> },
+    { name: 'JavaScript', icon: <JavascriptLogo className="h-6 w-6" /> },
+    { name: 'PyMongo', icon: <PyMongoLogo className="h-6 w-6" /> },
+    { name: 'Flask', icon: <FlaskLogo className="h-6 w-6" /> }
   ];
 
   return (
@@ -192,9 +211,9 @@ export default function Home() {
               </div>
               <div className="flex flex-wrap justify-center gap-4">
                 {skills.map((skill) => (
-                  <div key={skill} className="flex items-center gap-2 rounded-lg bg-card p-3 shadow-sm border border-border">
-                      <Code className="h-5 w-5 text-primary" />
-                      <span className="font-medium">{skill}</span>
+                  <div key={skill.name} className="flex items-center gap-3 rounded-lg bg-card p-3 shadow-sm border border-border">
+                      {skill.icon}
+                      <span className="font-medium">{skill.name}</span>
                   </div>
                 ))}
               </div>
