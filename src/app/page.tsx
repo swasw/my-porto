@@ -37,7 +37,7 @@ export default function Home() {
                       src="https://picsum.photos/seed/aqil/600/600"
                       width="300"
                       height="300"
-                      alt="Aqil Aswangga Anggaraksa"
+                      alt="Aqil Aswangga"
                       className="aspect-square overflow-hidden rounded-full object-cover"
                       data-ai-hint="profile picture"
                     />
@@ -46,7 +46,7 @@ export default function Home() {
                 <div className="flex flex-col justify-center space-y-4 text-center md:text-left">
                   <div className="space-y-2">
                     <Typewriter
-                      text="AQIL ASWANGGA"
+                      text="Aqil Aswangga"
                       className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl"
                     />
                     <AnimatedSection>

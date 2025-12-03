@@ -9,8 +9,8 @@ import { Background } from '@/components/ui/background';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Aqil Aswangga Anggaraksa's Portfolio",
-  description: 'A personal portfolio for Aqil Aswangga Anggaraksa, a software developer.',
+  title: "Aqil Aswangga's Portfolio",
+  description: 'A personal portfolio for Aqil Aswangga, a software developer.',
 };
 
 export default function RootLayout({
