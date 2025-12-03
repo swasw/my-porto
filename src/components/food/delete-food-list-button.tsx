@@ -37,7 +37,7 @@ export default function DeleteFoodListButton({ listId }: { listId: string }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button variant="default" size="sm">
+        <Button variant="destructive" size="sm">
           <Trash2 className="mr-2 h-4 w-4" /> Delete
         </Button>
       </AlertDialogTrigger>
