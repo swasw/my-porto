@@ -1,10 +1,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // 🚀 Wajib untuk GitHub Pages
   output: 'export',
 
-  // 🚀 Next Image harus unoptimized untuk export
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -29,11 +27,9 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // 🚀 Sesuaikan dengan nama repo GitHub kamu
   basePath: '/my-porto',
   assetPrefix: '/my-porto',
 
-  // Config tambahan kamu (dipertahankan)
   typescript: {
     ignoreBuildErrors: true,
   },
