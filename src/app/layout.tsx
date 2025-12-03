@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
-import { Toaster } from '@/components/ui/toaster';
+import { Inter } from 'next/font/google';
 import './globals.css';
-import Link from 'next/link';
-import { Home } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Toaster } from '@/components/ui/toaster';
+import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'FoodLog',
-  description: 'An app for creating and managing food lists, and playing games!',
+  title: 'My Portfolio',
+  description: 'A personal portfolio website.',
 };
 
 export default function RootLayout({
@@ -16,25 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="font-body antialiased">
-        <nav className="absolute top-4 left-4 z-10">
-          <Button asChild variant="outline" size="icon">
-            <Link href="/">
-              <Home className="h-4 w-4" />
-              <span className="sr-only">Home</span>
-            </Link>
-          </Button>
-        </nav>
-        {children}
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} antialiased`}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
         <Toaster />
       </body>
     </html>
