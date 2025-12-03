@@ -23,8 +23,18 @@ export default function Home() {
       <main className="flex-1">
         <section id="hero" className="w-full py-20 md:py-32 lg:py-40 bg-secondary/50">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="flex flex-col justify-center space-y-4">
+            <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
+              <div className="flex justify-center md:order-last">
+                <Image
+                  src="https://picsum.photos/seed/aqil/600/600"
+                  width="300"
+                  height="300"
+                  alt="Aqil Aswangga Anggaraksa"
+                  className="aspect-square overflow-hidden rounded-full object-cover"
+                  data-ai-hint="profile picture"
+                />
+              </div>
+              <div className="flex flex-col justify-center space-y-4 text-center md:text-left">
                 <div className="space-y-2">
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
                     Aqil Aswangga Anggaraksa
@@ -32,11 +42,11 @@ export default function Home() {
                   <h2 className="text-2xl font-medium text-primary/80">
                     Software Developer
                   </h2>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                  <p className="max-w-[600px] mx-auto md:mx-0 text-muted-foreground md:text-xl">
                     Active in the field of Computer Science, deepening my expertise in Software Development using Flutter and Dart, as well as Web Development with HTML5, PHP, and JavaScript.
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center md:justify-start">
                   <Button asChild size="lg">
                     <Link href="#contact">Contact Me</Link>
                   </Button>
@@ -45,14 +55,6 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-              <Image
-                src="https://picsum.photos/seed/aqil/600/600"
-                width="600"
-                height="600"
-                alt="Aqil Aswangga Anggaraksa"
-                className="mx-auto aspect-square overflow-hidden rounded-full object-cover"
-                data-ai-hint="profile picture"
-              />
             </div>
           </div>
         </section>
