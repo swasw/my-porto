@@ -83,7 +83,7 @@ export default function Home() {
                         <Link href="#contact">Contact Me</Link>
                       </Button>
                       <Button asChild variant="outline" size="lg">
-                        <Link href="#experience">View My Work</Link>
+                        <Link href="/work">View My Work</Link>
                       </Button>
                     </div>
                   </AnimatedSection>

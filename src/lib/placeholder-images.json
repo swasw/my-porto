@@ -23,6 +23,30 @@
       "description": "A bag of groceries.",
       "imageUrl": "https://images.unsplash.com/photo-1553531889-56cc480ac5cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm9jZXJpZXMlMjBzaG9wcGluZ3xlbnwwfHx8fDE3NjQ2NTU4OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "groceries shopping"
+    },
+    {
+      "id": "project-1",
+      "description": "A mobile application interface for performance tracking.",
+      "imageUrl": "https://images.unsplash.com/photo-1752055340594-4eb0eda11a64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2JpbGUlMjBhcHBsaWNhdGlvbiUyMGludGVyZmFjZXxlbnwwfHx8fDE3NjQ3NTQ0NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile application interface"
+    },
+    {
+      "id": "project-2",
+      "description": "Data visualization for fish farming.",
+      "imageUrl": "https://images.unsplash.com/photo-1675776772883-1844eb502122?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaXNoJTIwZmFybWluZyUyMGRhdGF8ZW58MHx8fHwxNzY0NzU0NDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fish farming data"
+    },
+    {
+      "id": "project-3",
+      "description": "Diagram illustrating clean architecture principles.",
+      "imageUrl": "https://images.unsplash.com/photo-1573404030214-248e0e711cab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGVhbiUyMGFyY2hpdGVjdHVyZSUyMGRpYWdyYW18ZW58MHx8fHwxNzY0NzU0NDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clean architecture diagram"
+    },
+    {
+      "id": "project-4",
+      "description": "A screenshot of a personal portfolio website.",
+      "imageUrl": "https://images.unsplash.com/photo-1530435460869-d13625c69bbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwb3J0Zm9saW8lMjB3ZWJzaXRlJTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3NjQ3NTQ0NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portfolio website screenshot"
     }
   ]
 }
