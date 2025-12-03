@@ -10,12 +10,15 @@ import {
 import FoodItemsTable from '@/components/food/food-items-table';
 import EditFoodList from '@/components/food/edit-food-list';
 
-export default async function FoodListDetailPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const foodList = await getFoodList(params.id);
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
+export default async function FoodListDetailPage({ params }: PageProps) {
+  const { id } = params;
+  const foodList = await getFoodList(id);
 
   if (!foodList) {
     notFound();
