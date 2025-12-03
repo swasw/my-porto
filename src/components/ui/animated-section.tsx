@@ -44,7 +44,7 @@ export function AnimatedSection({
       ref={ref}
       className={cn(
         'transition-all duration-700 ease-in-out',
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
+        isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10',
         className
       )}
     >
