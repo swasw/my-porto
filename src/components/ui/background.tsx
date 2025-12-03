@@ -1,14 +1,9 @@
 export function Background() {
   return (
     <div
-      className="fixed inset-0 -z-10 h-full w-full bg-cover bg-center bg-no-repeat opacity-20"
-      style={{
-        backgroundImage:
-          "url('https://picsum.photos/seed/tech/1920/3000')",
-      }}
-      data-ai-hint="computer network"
+      className="fixed inset-0 -z-10 h-full w-full"
     >
-      <div className="absolute inset-0 bg-background/50"></div>
+      <div className="absolute inset-0 bg-background"></div>
     </div>
   );
 }
