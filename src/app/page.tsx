@@ -38,7 +38,7 @@ export default function Home() {
                       width="300"
                       height="300"
                       alt="Aqiil Aswangga"
-                      className="aspect-square overflow-hidden rounded-full object-cover"
+                      className="aspect-square overflow-hidden rounded-full object-cover border-4 border-primary/50"
                       data-ai-hint="profile picture"
                     />
                   </AnimatedSection>
@@ -50,7 +50,7 @@ export default function Home() {
                       className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl"
                     />
                     <AnimatedSection>
-                      <h2 className="text-2xl font-medium text-primary/80">
+                      <h2 className="text-2xl font-medium text-primary">
                         Software Developer
                       </h2>
                       <p className="max-w-[600px] mx-auto md:mx-0 text-muted-foreground md:text-xl">
@@ -192,7 +192,7 @@ export default function Home() {
               </div>
               <div className="flex flex-wrap justify-center gap-4">
                 {skills.map((skill) => (
-                  <div key={skill} className="flex items-center gap-2 rounded-lg bg-background p-3 shadow-sm">
+                  <div key={skill} className="flex items-center gap-2 rounded-lg bg-card p-3 shadow-sm border border-border">
                       <Code className="h-5 w-5 text-primary" />
                       <span className="font-medium">{skill}</span>
                   </div>
