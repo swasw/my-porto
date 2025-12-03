@@ -46,7 +46,7 @@ export default function Home() {
                 <div className="flex flex-col justify-center space-y-4 text-center md:text-left">
                   <div className="space-y-2">
                     <Typewriter
-                      text="Aqil Aswangga Anggaraksa"
+                      text="AQIL ASWANGGA"
                       className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl"
                     />
                     <AnimatedSection>
