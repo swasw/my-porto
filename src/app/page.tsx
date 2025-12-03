@@ -86,8 +86,18 @@ export default function Home() {
                         <div className="absolute -left-9 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
                             <Briefcase className="h-4 w-4" />
                         </div>
+                        <h3 className="text-xl font-semibold">PT. Indi Teknokreasi Internasional</h3>
+                        <h4 className="font-medium text-primary/80">Mobile App Developer | August 2025 - December 2025</h4>
+                        <p className="mt-2 text-muted-foreground">
+                          Developed Flutter applications from scratch, applying Clean Architecture and BLoC for scalability. My role covered the full development lifecycle, including user requirement analysis, UI/UX design, API integration, and comprehensive code refactoring to improve performance and maintainability.
+                        </p>
+                    </div>
+                    <div className="relative">
+                        <div className="absolute -left-9 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                            <Briefcase className="h-4 w-4" />
+                        </div>
                         <h3 className="text-xl font-semibold">Direktorat Jendral Peraturan Perundang-undangan (SISINFO DIVISION)</h3>
-                        <h4 className="font-medium text-primary/80">Front-End Developer | 2025 - Now</h4>
+                        <h4 className="font-medium text-primary/80">Front-End Developer | February 2025 - July 2025</h4>
                         <p className="mt-2 text-muted-foreground">
                            Assigned to develop the E-Harmonization application to monitor staff performance through a mobile application, using Flutter as the main development framework.
                         </p>
