@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "salad-bowl",
+      "description": "A vibrant salad bowl.",
+      "imageUrl": "https://images.unsplash.com/photo-1704224991701-146f8edae1ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYWxhZCUyMGZvb2R8ZW58MHx8fHwxNzY0NzI2ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "salad food"
+    },
+    {
+      "id": "fruit-basket",
+      "description": "A basket full of fresh fruits.",
+      "imageUrl": "https://images.unsplash.com/photo-1629905707362-03cf1a9f6e2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcnVpdCUyMGJhc2tldHxlbnwwfHx8fDE3NjQ2NTczODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fruit basket"
+    },
+    {
+      "id": "bread-loaf",
+      "description": "A freshly baked loaf of bread.",
+      "imageUrl": "https://images.unsplash.com/photo-1702742800078-06d9e9af4fd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicmVhZCUyMGJha2VyeXxlbnwwfHx8fDE3NjQ2NzY5NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bread bakery"
+    },
+    {
+      "id": "grocery-bag",
+      "description": "A bag of groceries.",
+      "imageUrl": "https://images.unsplash.com/photo-1553531889-56cc480ac5cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm9jZXJpZXMlMjBzaG9wcGluZ3xlbnwwfHx8fDE3NjQ2NTU4OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "groceries shopping"
+    }
+  ]
 }
