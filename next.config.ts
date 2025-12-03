@@ -1,14 +1,12 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // 🚀 Wajib untuk GitHub Pages
+  output: 'export',
+
+  // 🚀 Next Image harus unoptimized untuk export
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -29,6 +27,18 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+
+  // 🚀 Sesuaikan dengan nama repo GitHub kamu
+  basePath: '/my-porto',
+  assetPrefix: '/my-porto',
+
+  // Config tambahan kamu (dipertahankan)
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
