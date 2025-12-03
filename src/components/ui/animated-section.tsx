@@ -18,7 +18,6 @@ export function AnimatedSection({
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Set visibility based on whether the element is intersecting the viewport
         setIsVisible(entry.isIntersecting);
       },
       {
@@ -42,8 +41,8 @@ export function AnimatedSection({
     <div
       ref={ref}
       className={cn(
-        'transition-opacity duration-700 ease-in',
-        isVisible ? 'opacity-100' : 'opacity-0',
+        'transition-all duration-700 ease-in-out',
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
         className
       )}
     >
