@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 import { Github, Linkedin, Mail, Briefcase, GraduationCap, Code, Instagram } from 'lucide-react';
 import Link from 'next/link';
 
@@ -80,39 +85,57 @@ export default function Home() {
                 My professional journey and roles.
               </p>
             </div>
-            <div className="relative pl-6 before:absolute before:left-0 before:top-2 before:h-full before:w-0.5 before:bg-border">
-                <div className="grid gap-10">
-                    <div className="relative">
-                        <div className="absolute -left-9 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                            <Briefcase className="h-4 w-4" />
-                        </div>
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>
+                    <div className="flex items-center gap-4">
+                      <Briefcase className="h-6 w-6 text-primary" />
+                      <div className="text-left">
                         <h3 className="text-xl font-semibold">PT. Indi Teknokreasi Internasional</h3>
                         <h4 className="font-medium text-primary/80">Mobile App Developer | August 2025 - December 2025</h4>
-                        <p className="mt-2 text-muted-foreground">
-                          Developed Flutter applications from scratch, applying Clean Architecture and BLoC for scalability. My role covered the full development lifecycle, including user requirement analysis, UI/UX design, API integration, and comprehensive code refactoring to improve performance and maintainability.
-                        </p>
+                      </div>
                     </div>
-                    <div className="relative">
-                        <div className="absolute -left-9 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                            <Briefcase className="h-4 w-4" />
-                        </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p className="mt-2 text-muted-foreground pl-10">
+                      Developed Flutter applications from scratch, applying Clean Architecture and BLoC for scalability. My role covered the full development lifecycle, including user requirement analysis, UI/UX design, API integration, and comprehensive code refactoring to improve performance and maintainability.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>
+                    <div className="flex items-center gap-4">
+                      <Briefcase className="h-6 w-6 text-primary" />
+                      <div className="text-left">
                         <h3 className="text-xl font-semibold">Direktorat Jendral Peraturan Perundang-undangan (SISINFO DIVISION)</h3>
                         <h4 className="font-medium text-primary/80">Front-End Developer | February 2025 - July 2025</h4>
-                        <p className="mt-2 text-muted-foreground">
-                           Assigned to develop the E-Harmonization application to monitor staff performance through a mobile application, using Flutter as the main development framework.
-                        </p>
+                      </div>
                     </div>
-                     <div className="relative">
-                        <div className="absolute -left-9 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                            <Briefcase className="h-4 w-4" />
-                        </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p className="mt-2 text-muted-foreground pl-10">
+                       Assigned to develop the E-Harmonization application to monitor staff performance through a mobile application, using Flutter as the main development framework.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>
+                    <div className="flex items-center gap-4">
+                      <Briefcase className="h-6 w-6 text-primary" />
+                      <div className="text-left">
                         <h3 className="text-xl font-semibold">Aqua Breeding Tech</h3>
                         <h4 className="font-medium text-primary/80">Full Stack Developer | 2023 - 2024</h4>
-                        <p className="mt-2 text-muted-foreground">
-                            Served as a Front-End Developer, creating a mobile app with Flutter for a freshwater fish farming research project. Also handled Full-Stack responsibilities, working with Python Flask, PyMongo, and MongoDB on the back-end, including API debugging, testing, and database schema adjustments.
-                        </p>
+                      </div>
                     </div>
-                </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p className="mt-2 text-muted-foreground pl-10">
+                        Served as a Front-End Developer, creating a mobile app with Flutter for a freshwater fish farming research project. Also handled Full-Stack responsibilities, working with Python Flask, PyMongo, and MongoDB on the back-end, including API debugging, testing, and database schema adjustments.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </section>
@@ -122,7 +145,7 @@ export default function Home() {
             <div className="space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Education</h2>
             </div>
-             <div className="relative pl-6 before:absolute before:left-0 before:top-2 before:h-full before:w-0.5 before:bg-border">
+             <div className="relative pl-6 before:absolute before:left-0 before:top-2 before:h-full before:w-0.5 before:bg-border max-w-3xl mx-auto">
                 <div className="grid gap-10">
                     <div className="relative">
                         <div className="absolute -left-9 top-2 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
