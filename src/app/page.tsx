@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Github, Linkedin, Mail, Briefcase, GraduationCap, Code } from 'lucide-react';
+import { Github, Linkedin, Mail, Briefcase, GraduationCap, Code, Instagram } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Home() {
@@ -162,13 +162,18 @@ export default function Home() {
             </div>
             <div className="flex justify-center gap-4">
               <Button asChild variant="outline" size="icon">
-                <Link href="#" aria-label="GitHub">
+                <Link href="https://github.com/swasw" target="_blank" rel="noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="icon">
-                <Link href="#" aria-label="LinkedIn">
+                <Link href="https://linkedin.com/in/aqil-aswangga-9a6a09317" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="icon">
+                <Link href="https://www.instagram.com/aswangga.a/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                  <Instagram className="h-5 w-5" />
                 </Link>
               </Button>
                <Button asChild variant="outline" size="icon">

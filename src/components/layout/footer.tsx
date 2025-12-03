@@ -7,7 +7,7 @@ export function Footer() {
                 <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
                     Built by{" "}
                     <Link
-                        href="#"
+                        href="https://www.instagram.com/aswangga.a/"
                         target="_blank"
                         rel="noreferrer"
                         className="font-medium underline underline-offset-4"
@@ -16,7 +16,7 @@ export function Footer() {
                     </Link>
                     . The source code is available on{" "}
                     <Link
-                        href="#"
+                        href="https://github.com/swasw"
                         target="_blank"
                         rel="noreferrer"
                         className="font-medium underline underline-offset-4"
