@@ -53,7 +53,7 @@ export default function Home() {
                 <div className="flex justify-center md:order-last">
                   <AnimatedSection>
                     <Image
-                      src="https://picsum.photos/seed/aqil/600/600"
+                      src="/pp2.jpeg"
                       width="300"
                       height="300"
                       alt="Aqil Aswangga"
