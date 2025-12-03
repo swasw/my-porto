@@ -247,7 +247,7 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="icon">
-                  <Link href="mailto:aqilaswangga1@gmail.com" aria-label="Email">
+                  <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=aqilaswangga1@gmail.com" target="_blank" rel="noreferrer" aria-label="Email">
                     <Mail className="h-5 w-5" />
                   </Link>
                 </Button>
