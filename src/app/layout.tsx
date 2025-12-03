@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
-import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Background } from '@/components/ui/background';
+import { ConditionalHeader } from '@/components/layout/conditional-header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth dark">
       <body className={`${inter.className} antialiased`}>
         <Background />
-        <Header />
+        <ConditionalHeader />
         <main>{children}</main>
         <Footer />
         <Toaster />
