@@ -18,49 +18,43 @@ export default function WorkPage() {
   const projects = [
     {
       id: 'e-harmonization-app',
-      title: 'E-Harmonization App',
+      title: 'E-Harmonisasi App',
       description:
         'A mobile application to monitor staff performance, developed for the Directorate General of Legislation.',
-      imageUrl:
-        PlaceHolderImages.find((p) => p.id === 'project-1')?.imageUrl ||
-        'https://picsum.photos/seed/project1/600/400',
+      imageUrl:"/images/e_harmon_thumbnail.png",
       imageHint: 'mobile application interface',
     },
     {
       id: 'aqua-breeding-tech-app',
-      title: 'Aqua Breeding Tech App',
+      title: 'Aqua Breeding App',
       description:
         'A mobile app for a freshwater fish farming research project, with a backend using Python Flask and MongoDB.',
-      imageUrl:
-        PlaceHolderImages.find((p) => p.id === 'project-2')?.imageUrl ||
-        'https://picsum.photos/seed/project2/600/400',
+      imageUrl:"/images/aqua_thumbnail.png",
       imageHint: 'fish farming data',
     },
     {
       id: 'in-house-flutter-app',
-      title: 'PT. Indi Teknokreasi App',
+      title: 'Talent Force App',
       description:
         'A scalable Flutter application built from scratch using Clean Architecture and BLoC.',
-      imageUrl:
-        PlaceHolderImages.find((p) => p.id === 'project-3')?.imageUrl ||
-        'https://picsum.photos/seed/project3/600/400',
+      imageUrl:"/images/talentforce_thumbnail.png",
       imageHint: 'clean architecture diagram',
     },
-    {
-      id: 'portfolio-website',
-      title: 'Personal Portfolio',
-      description: 'The very website you are looking at right now.',
-      imageUrl:
-        PlaceHolderImages.find((p) => p.id === 'project-4')?.imageUrl ||
-        'https://picsum.photos/seed/project4/600/400',
-      imageHint: 'portfolio website screenshot',
-    },
+    // {
+    //   id: 'portfolio-website',
+    //   title: 'Personal Portfolio',
+    //   description: 'The very website you are looking at right now.',
+    //   imageUrl:
+    //     PlaceHolderImages.find((p) => p.id === 'project-4')?.imageUrl ||
+    //     'https://picsum.photos/seed/project4/600/400',
+    //   imageHint: 'portfolio website screenshot',
+    // },
   ];
 
   return (
     <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
       <AnimatedSection className="mb-8">
-        <Button asChild variant="outline">
+        <Button asChild>
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Home
@@ -104,7 +98,7 @@ export default function WorkPage() {
                     </p>
                   </CardContent>
                   <CardFooter className="p-6 pt-0">
-                    <Button variant="outline" className="w-full">
+                    <Button className="w-full">
                       View Details
                       <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>

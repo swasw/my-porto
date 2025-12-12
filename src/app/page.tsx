@@ -13,7 +13,7 @@ import { Typewriter } from '@/components/ui/typewriter';
 // import profilepict1 from './profilepict1.jpeg';
 // import profilepict1 from '@/app/profilepict1.jpeg';
 // import profilepict1 from '@/app/pp1.jpeg';
-import profilepict1 from '@/app/pp3.jpeg';
+import profilepict1 from '@/app/pp44.jpg';
 
 // Import logos
 import { PythonLogo } from '@/components/icons/PythonLogo';
@@ -69,7 +69,7 @@ export default function Home() {
                 <div className="flex flex-col justify-center space-y-4 text-center md:text-left">
                   <div className="space-y-2">
                     <Typewriter
-                      text="Aqiil Aswangga"
+                      text="Aqil Aswangga"
                       className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl"
                     />
                     <AnimatedSection>

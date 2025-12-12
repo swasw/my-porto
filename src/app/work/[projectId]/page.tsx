@@ -23,63 +23,57 @@ export default function ProjectDetailPage() {
   const projects = [
     {
       id: 'e-harmonization-app',
-      title: 'E-Harmonization App',
+      title: 'E-Harmonisasi App',
       description:
         'A comprehensive mobile application developed for the Directorate General of Legislation to monitor staff performance. The app was built using Flutter, focusing on a clean user interface and real-time data synchronization.',
       longDescription:
         'This project involved the full development cycle, from requirement gathering to deployment. I was responsible for designing and implementing the front-end using Flutter and Dart. The application helps in tracking daily tasks, reporting, and overall performance management of the staff, thereby increasing transparency and efficiency within the department.',
-      imageUrl:
-        PlaceHolderImages.find((p) => p.id === 'project-1')?.imageUrl ||
-        'https://picsum.photos/seed/project1/1200/800',
+      imageUrl:"/images/e_harmon_thumbnail.png",
       imageHint: 'mobile application dashboard',
-      technologies: ['Flutter', 'Dart', 'Firebase'],
-      githubUrl: '#',
-      liveUrl: '#',
+      technologies: ['Flutter', 'Dart', 'PySQLAlchemy','MySQL Database'],
+      githubUrl: 'https://github.com/CarCirCur-Trilogy/Frontend-E-Harmonisasi-Mobile.git',
+      liveUrl: 'Link Unavailable',
     },
     {
       id: 'aqua-breeding-tech-app',
-      title: 'Aqua Breeding Tech App',
+      title: 'Aqua Breeding App',
       description:
         'A full-stack solution for a freshwater fish farming research project. It includes a mobile app for data collection and a backend for data processing and analysis.',
       longDescription:
         "In this project, I handled both front-end and back-end development. The mobile application, built with Flutter, allows researchers to input data directly from the field. The back-end, powered by Python (Flask) and MongoDB, processes this data, providing valuable insights through a web-based dashboard. I was also involved in API debugging, database schema design, and ensuring data integrity.",
-      imageUrl:
-        PlaceHolderImages.find((p) => p.id === 'project-2')?.imageUrl ||
-        'https://picsum.photos/seed/project2/1200/800',
+      imageUrl:"/images/aqua_thumbnail.png",
       imageHint: 'data analytics dashboard',
       technologies: ['Flutter', 'Python', 'Flask', 'MongoDB', 'PyMongo'],
-      githubUrl: '#',
-      liveUrl: '#',
+      githubUrl: 'Private Repo',
+      liveUrl: 'https://youtu.be/porWUQyTYgQ?si=LtjnhKKA-pN9gZsD',
     },
     {
       id: 'in-house-flutter-app',
-      title: 'PT. Indi Teknokreasi App',
+      title: 'Talent Force',
       description:
         'Developed a scalable in-house Flutter application applying Clean Architecture and BLoC state management for improved performance and maintainability.',
       longDescription:
         "The primary goal was to create a robust and scalable foundation for the company's future mobile applications. By implementing Clean Architecture, we separated the business logic from the UI and data layers, making the codebase easier to test and maintain. The BLoC pattern was used for predictable and efficient state management, which is crucial for complex applications.",
-      imageUrl:
-        PlaceHolderImages.find((p) => p.id === 'project-3')?.imageUrl ||
-        'https://picsum.photos/seed/project3/1200/800',
+      imageUrl:"/images/talentforce_thumbnail.png",
       imageHint: 'code structure diagram',
-      technologies: ['Flutter', 'Dart', 'BLoC', 'Clean Architecture'],
-      githubUrl: '#',
-      liveUrl: '#',
+      technologies: ['Flutter', 'Dart', 'BLoC State Management', 'Clean Architecture','Firebase',],
+      githubUrl: 'Private Repo',
+      liveUrl: 'https://youtu.be/jEYuI_QD__o?si=HH5KUBrp-_wXY8E4',
     },
-     {
-      id: 'portfolio-website',
-      title: 'Personal Portfolio',
-      description: 'A responsive and animated personal portfolio to showcase my skills and projects.',
-      longDescription:
-        'This website was built using Next.js, React, and Tailwind CSS. I focused on creating a clean, modern design with smooth animations to provide a pleasant user experience. It is fully responsive and showcases my journey, skills, and work in a structured manner. This project itself is a testament to my web development abilities.',
-      imageUrl:
-        PlaceHolderImages.find((p) => p.id === 'project-4')?.imageUrl ||
-        'https://picsum.photos/seed/project4/1200/800',
-      imageHint: 'website hero section',
-      technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
-      githubUrl: '#',
-      liveUrl: '#',
-    },
+    //  {
+    //   id: 'portfolio-website',
+    //   title: 'Personal Portfolio',
+    //   description: 'A responsive and animated personal portfolio to showcase my skills and projects.',
+    //   longDescription:
+    //     'This website was built using Next.js, React, and Tailwind CSS. I focused on creating a clean, modern design with smooth animations to provide a pleasant user experience. It is fully responsive and showcases my journey, skills, and work in a structured manner. This project itself is a testament to my web development abilities.',
+    //   imageUrl:
+    //     PlaceHolderImages.find((p) => p.id === 'project-4')?.imageUrl ||
+    //     'https://picsum.photos/seed/project4/1200/800',
+    //   imageHint: 'website hero section',
+    //   technologies: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+    //   githubUrl: '#',
+    //   liveUrl: '#',
+    // },
   ];
 
   const project = projects.find((p) => p.id === projectId);
@@ -104,7 +98,7 @@ export default function ProjectDetailPage() {
   return (
     <div className="container mx-auto px-4 md:px-6 py-12 md:py-20">
       <AnimatedSection className="mb-8">
-        <Button asChild variant="outline">
+        <Button asChild >
           <Link href="/work">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to My Work
@@ -134,7 +128,7 @@ export default function ProjectDetailPage() {
             <AnimatedSection>
                 <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary">
+                    <Badge key={tech} >
                         {tech}
                     </Badge>
                     ))}
@@ -155,7 +149,7 @@ export default function ProjectDetailPage() {
                             View on GitHub
                         </Link>
                     </Button>
-                    <Button asChild variant="outline" disabled={project.liveUrl === '#'}>
+                    <Button asChild disabled={project.liveUrl === '#'}>
                         <Link href={project.liveUrl} target="_blank">
                             <ExternalLink className="mr-2 h-4 w-4" />
                             Live Demo
