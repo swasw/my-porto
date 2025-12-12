@@ -32,7 +32,7 @@ export default function ProjectDetailPage() {
       imageHint: 'mobile application dashboard',
       technologies: ['Flutter', 'Dart', 'PySQLAlchemy','MySQL Database'],
       githubUrl: 'https://github.com/CarCirCur-Trilogy/Frontend-E-Harmonisasi-Mobile.git',
-      liveUrl: 'Link Unavailable',
+      liveUrl: 'https://youtube.com/shorts/CUb7N04pF_4?si=hO0SWcPG6AN2sPLz',
     },
     {
       id: 'aqua-breeding-tech-app',

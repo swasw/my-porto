@@ -1,52 +1,51 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { cn } from '@/lib/utils';
+import { useEffect, useState } from "react";
 
 interface TypewriterProps {
-  text: string;
+  texts: string[];
+  loop?: boolean;
   speed?: number;
   className?: string;
-  cursorClassName?: string;
 }
 
 export function Typewriter({
-  text,
+  texts,
+  loop = true,
   speed = 100,
   className,
-  cursorClassName,
 }: TypewriterProps) {
-  const [displayedText, setDisplayedText] = useState('');
-  const [isTyping, setIsTyping] = useState(true);
+  const [text, setText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    setDisplayedText(''); // Reset on text change
-    setIsTyping(true);
-    let i = 0;
-    const intervalId = setInterval(() => {
-      if (i < text.length) {
-        setDisplayedText((prev) => prev + text.charAt(i));
-        i++;
-      } else {
-        clearInterval(intervalId);
-        setIsTyping(false);
-      }
-    }, speed);
+    const current = texts[index];
 
-    return () => clearInterval(intervalId);
-  }, [text, speed]);
+    // Pause before deleting
+    if (!deleting && subIndex === current.length) {
+      setTimeout(() => setDeleting(true), 1000);
+      return;
+    }
 
-  return (
-    <h1 className={cn('relative', className)}>
-      {displayedText}
-      <span
-        className={cn(
-          'animate-typing-cursor',
-          'ml-1 inline-block h-[1em] w-[4px] bg-foreground',
-          isTyping ? 'opacity-100' : 'opacity-0 transition-opacity duration-1000',
-          cursorClassName
-        )}
-      />
-    </h1>
-  );
+    // Finish deleting → go to next word
+    if (deleting && subIndex === 0) {
+      setDeleting(false);
+      setIndex((prev) => {
+        if (prev + 1 === texts.length) return loop ? 0 : prev;
+        return prev + 1;
+      });
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      setSubIndex((prev) => prev + (deleting ? -1 : 1));
+      setText(current.slice(0, subIndex));
+    }, deleting ? speed / 2 : speed);
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, deleting, index, texts, loop, speed]);
+
+  return <span className={className}>{text}</span>;
 }
